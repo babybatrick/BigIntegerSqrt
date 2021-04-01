@@ -1,12 +1,19 @@
-﻿using System;
+using System;
+using System.Numerics;
 
 namespace BigIntegerSqrt
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            BigInteger input;
+			
+            //Converting input into BigInteger using TryParse method, to avoid FormatException
+            bool parsed = BigInteger.TryParse(Console.ReadLine(), out input);
+
+            if(parsed) Console.WriteLine(BigIntegerSqrt.Sqrt(input));
+            else Console.WriteLine("Invalid Input");
         }
     }
 }
