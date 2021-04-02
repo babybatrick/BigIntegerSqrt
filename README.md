@@ -1,4 +1,4 @@
-This repository contains a code snippet used for calculating square roots for BigIntegers (System.Numerics.BigInteger).
+This repository contains code used for calculating square roots for BigIntegers (System.Numerics.BigInteger).
 
 Currently there is no method in the BigInteger Struct. Therefore this code snippet is Licenced under The Unlicense licence,
 which permits free use of the software.
